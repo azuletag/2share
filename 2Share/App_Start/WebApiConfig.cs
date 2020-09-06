@@ -14,10 +14,15 @@ namespace _2Share
             // Rutas de API web
             config.MapHttpAttributeRoutes();
 
+            config.Formatters.JsonFormatter
+                .SerializerSettings
+                .ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                routeTemplate: "api/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional, action = "GroceryList" }
             );
         }
     }
