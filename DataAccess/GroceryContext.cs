@@ -11,6 +11,9 @@ namespace DataAccess
 {
     public class GroceryContext : DbContext
     {
+        /// <summary>
+        /// Persistence to the database
+        /// </summary>
         public GroceryContext() : base("GroceryContext")
         {
         }
@@ -18,7 +21,6 @@ namespace DataAccess
         public DbSet<Product> Products { get; set; }
         public DbSet<GroceryList> GroceryLists { get; set; }
 
-        //public DbSet<ProductGroceryList> ProductGroceryLists { get; set; }
 
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

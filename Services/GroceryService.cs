@@ -9,8 +9,13 @@ using System.Threading.Tasks;
 
 namespace Services
 {
+    /// <summary>
+    /// Grocery list database repository class, exposing the required operations
+    /// in a database based on the given context in its constructor.
+    /// </summary>
     public class GroceryService : IGroceryService, IDisposable
     {
+        
         private IGroceryRepository GroceryRepository;
         bool disposed;
 
