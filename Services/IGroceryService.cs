@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public interface IGroceryService
+    public interface IGroceryService : IDisposable
     {
         IResponse UpdateGroceryList(GroceryListViewModel groceryList);
         IEnumerable<Product> GetProducts();

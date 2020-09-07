@@ -46,5 +46,11 @@ namespace _2Share.Controllers
             IResponse response = this.GroceryService.UpdateGroceryList(groceryListViewModel);
             return Ok(response);
         }
+
+        protected override void Dispose(bool disposing)
+        {
+            GroceryService.Dispose();
+            base.Dispose(disposing);
+        }
     }
 }

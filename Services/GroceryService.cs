@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace Services
 {
-    public class GroceryService : IGroceryService
+    public class GroceryService : IGroceryService, IDisposable
     {
         private IGroceryRepository GroceryRepository;
+        bool disposed;
 
         public GroceryService()
         {
@@ -54,6 +55,26 @@ namespace Services
         public GroceryList GetGroceryList()
         {
             return this.GroceryRepository.GetGroceryList();
+        }
+
+        protected virtual void Dispose(bool disposing)
+        {
+            if (!disposed)
+            {
+                if (disposing)
+                {
+                    //dispose managed resources}
+                    this.GroceryRepository.Dispose();
+                }
+            }
+            //dispose unmanaged resources
+            disposed = true;
+        }
+
+        public void Dispose()
+        {
+            Dispose(true);
+            GC.SuppressFinalize(this);
         }
     }
 }

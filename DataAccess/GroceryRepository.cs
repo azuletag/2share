@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace DataAccess
 {
     
-    public class GroceryRepository : IGroceryRepository
+    public class GroceryRepository : IGroceryRepository, IDisposable
     {
         private GroceryContext context;
 

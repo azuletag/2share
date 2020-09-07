@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess
 {
-    public interface IGroceryRepository
+    public interface IGroceryRepository : IDisposable
     {
         void UpdateGroceryList(GroceryList groceryList);
         IEnumerable<Product> GetProducts();
