@@ -59,7 +59,7 @@ namespace _2Share.Controllers
         public HttpResponseMessage Index()
         {
             var response = new HttpResponseMessage();
-            response.Content = new StringContent("<div>App is running</div>");
+            response.Content = new StringContent("<div>Api is running</div>");
             response.Content.Headers.ContentType = new MediaTypeHeaderValue("text/html");
             return response;
         }
