@@ -6,7 +6,7 @@
 
 1.2. __CONNECTION STRING:__ 
 
-If you dont want to use a MSSQL local database change the connection string in `App.config` file in the 2Share/DataAccess project. Also if you use a dedicated database server you will have to create the database objects to run the project. Use the scripts below:
+If you dont want to use a MSSQL local database change the connection string in `App.config` file in the `2Share/DataAccess` project. Also if you use a dedicated database server you will have to create the database objects to run the project. Use the scripts below:
 ```
 readme_files/GroceryList.sql
 readme_files/Product.sql.sql
@@ -17,7 +17,7 @@ readme_files/ProductGroceryList.sql
 
 `Update-Package Microsoft.CodeDom.Providers.DotNetCompilerPlatform -r`
 
-apirunning.png
+![Alt text](https://github.com/azuletag/2share/blob/master/readme_files/apirunning.png?raw=true "Optional Title")
 
 1.4. __CONSUME THE API.__
 
@@ -75,13 +75,13 @@ From a terminal run `npm install -g @vue/cli`
 
 2.4. __RUN THE APPLICATION.__ in the the same folder `2Share\2share-frontend\` run the command `npm run serve`.
 
-readme_files/frontend-running.png
+![Alt text](https://github.com/azuletag/2share/blob/master/readme_files/frontend-running.png?raw=true "Optional Title")
 
 You can also deploy the built version from `2Share\2share-frontend\dist` folder but you will have a web server with network access to the backend server.
 
 __DEMO:__
 
-readme_files/demo.gif
+![Alt text](https://github.com/azuletag/2share/blob/master/readme_files/demo.gif?raw=true "Optional Title")
 
 
 
