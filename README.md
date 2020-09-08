@@ -62,7 +62,29 @@ RESPONSE: JSON
     "Name": "My Grocery List"
 }
 ```
-
+DATA: GROCERY LIST\
+METHOD: POST\
+ENDPOINT: /api/grocery/\
+RESPONSE: JSON
+BODY:JSON
+```
+{
+    "GroceryListId" : 1,
+    "Products": [
+        {
+            "ProductId" : 1,
+            "Tagged": 0
+        },
+        {
+            "ProductId" : 1,
+            "Tagged": 0
+        }
+        .
+        .
+        .
+    ]
+}
+```
 2. __2SHARE - FRONTEND__
 
 2.1. INSTALL NODEJS https://nodejs.org/
