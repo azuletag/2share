@@ -76,8 +76,8 @@ BODY:JSON
             "Tagged": 0
         },
         {
-            "ProductId" : 1,
-            "Tagged": 0
+            "ProductId" : 2,
+            "Tagged": 1
         }
         .
         .
